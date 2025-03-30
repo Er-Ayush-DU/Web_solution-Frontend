@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from "react";
+import { useLoaderData } from "react-router-dom";
+
 
 function Github() {
-  const [data, setData] = useState([]) // Component ke andar data store aur re-render karne ke liye hota hai. 
+  const data = useLoaderData()
 
-  useEffect(() => {  //Side effects (API calls, localStorage, DOM updates, event listeners) handle karta hai.
-    fetch("https://api.github.com/users/Er-Ayush-DU")
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-        setData(data)
-      })
-
-  }, [])
+  /*  const [data, setData] = useState([]) // Component ke andar data store aur re-render karne ke liye hota hai. 
+  
+    useEffect(() => {  //Side effects (API calls, localStorage, DOM updates, event listeners) handle karta hai.
+      fetch("https://api.github.com/users/Er-Ayush-DU")
+        .then(response => response.json())
+        .then(data => {
+          console.log(data)
+          setData(data)
+        })
+  
+    }, [])
+    
+    */
 
   return (
     <>
@@ -23,3 +29,8 @@ function Github() {
 }
 
 export default Github;
+
+export const GithubLoadFollwer = async () => {
+  const response = await fetch("https://api.github.com/users/Er-Ayush-DU")
+  return response.json()
+}
