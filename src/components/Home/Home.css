@@ -1,0 +1,55 @@
+.heroSection img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.heroText h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.heroText p {
+  font-family: sans-serif;
+  font-size: large;
+  text-align: center;
+}
+
+.heroText p span:nth-child(1) {
+  color: silver;
+
+}
+
+.heroText p span:nth-child(2) {
+  color: silver;
+
+}
+
+.social-icons {
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items:center
+  
+}
+
+.social-icons a i {
+  font-size: xx-large;
+  color:silver
+}
