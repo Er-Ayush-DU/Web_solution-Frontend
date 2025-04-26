@@ -37,7 +37,16 @@ It aims to connect **businesses** with **skilled freelancers** and make project 
 
 ## 📷 Screenshots
 
-> (Add few images/screenshots of your website here!)
+UI's of the website:
+
+![website image](web_solution\src\assets\UI_1.png)
+
+
+![website image](web_solution\src\assets\UI_2.png)\
+
+
+
+
 
 ---
 
@@ -49,7 +58,4 @@ To run the project locally:
    ```bash
    git clone https://github.com/Er-Ayush-DU/Web_solution-Frontend.git
 
-   Command For running website on Localhost:
-
-   ```bash
-   npm run dev
+   
