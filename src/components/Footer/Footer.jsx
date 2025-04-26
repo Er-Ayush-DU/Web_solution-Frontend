@@ -8,7 +8,7 @@ const Footer = () => {
                     {/* Logo and Brand Info */}
                     <div className="mb-8 md:mb-0">
                         <a href="/" className="flex items-center">
-                            <img src="./src/assets/my_logo.png" className="mr-3 h-12" alt="Logo" />
+                            <img src="assets/my_logo.png" className="mr-3 h-12" alt="Logo" />
                             <span className="self-center text-2xl font-semibold whitespace-nowrap bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-transparent">
                                 Ayush Tiwari
                             </span>

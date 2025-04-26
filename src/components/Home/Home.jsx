@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="heroSection">
         <img
-          src=".\src\assets\Hero_image.jpeg"
+          src="assets\Hero_image.jpeg"
           alt="HeroImage"
           className="heroImage"
         />

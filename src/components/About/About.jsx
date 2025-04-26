@@ -9,7 +9,7 @@ export default function About() {
         <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-5/12">
             <img
-              src=".\src\assets\ayush_formal.jpg"
+              src="assets\ayush_formal.jpg"
               alt="image"
               width={300}
               style={{ borderRadius: 150 }}
@@ -56,7 +56,7 @@ export default function About() {
                   <p><a href="tel:+919260932458">+91 9260932458</a></p>
                 </div>
 
-                <div className='Resume bg-gray-600 w-50 text-center p-2 rounded-2xl text-white'><a href="./src/assets/AyushTiwari_Resume.pdf" target="_blank">Download Resume</a></div>
+                <div className='Resume bg-gray-600 w-50 text-center p-2 rounded-2xl text-white'><a href="assets/AyushTiwari_Resume.pdf" target="_blank">Download Resume</a></div>
               </div>
             </div>
 
