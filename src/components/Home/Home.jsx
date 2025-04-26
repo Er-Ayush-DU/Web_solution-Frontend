@@ -1,4 +1,4 @@
-import React from 'react'
+                import React from 'react'
 import "./Home.css"
 import About from '../About/About';
 import Contact from '../Contact/Contact'
