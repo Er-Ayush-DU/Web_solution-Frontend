@@ -11,6 +11,6 @@ html{
   scrollbar-width: none;
   -ms-overflow-style: none; /* IE and Edge */
   ::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+    display: none; /* Chrome */
   }
 }
