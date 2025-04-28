@@ -42,7 +42,7 @@ UI's of the website:
 ![website image](web_solution\src\assets\UI_1.png)
 
 
-![website image](web_solution\src\assets\UI_2.png)\
+![website image](web_solution\src\assets\UI_2.png)
 
 
 
