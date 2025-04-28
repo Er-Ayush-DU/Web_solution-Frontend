@@ -10,7 +10,7 @@ export default function Header() {
   };
 
   return (
-    <header className="shadow sticky z-50 top-0">
+    <header className="shadow sticky z-50 top-0 bg-white">
       <nav className="navbar px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link to="/" className="flex items-center">
@@ -21,21 +21,36 @@ export default function Header() {
             />
           </Link>
 
-          {/* Mobile menu button + Fiverr button (visible on mobile) */}
-          <div className="flex items-center lg:order-2 gap-2">
+          {/* Right side buttons (Fiverr, Login, Register) */}
+          <div className="flex items-center lg:order-2">
+            <div className="hidden md:flex gap-3 mr-4"> {/* Added margin-right here */}
+              <Link
+                to="/login"
+                className="text-white hover:text-white hover:bg-orange-600 font-medium rounded-lg text-sm px-4 py-2 lg:py-2.5 focus:outline-none transition-colors duration-300 border border-gray-300 hover:border-orange-600"
+              >
+                Login
+              </Link>
+              <Link
+                to="/register"
+                className="text-white bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 font-medium rounded-lg text-sm px-4 py-2 lg:py-2.5 focus:outline-none transition-colors duration-300 shadow-md hover:shadow-lg"
+              >
+                Register
+              </Link>
+            </div>
+
             <a
               href="https://www.fiverr.com/ayushtiwari226"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white bg-orange-700 hover:bg-orange-800  font-medium rounded-lg text-sm px-4 py-2 lg:py-2.5 focus:outline-none cursor-pointer mr-5"
+              className="text-white bg-blue-700 hover:bg-blue-500 font-medium rounded-lg text-sm px-4 py-2 lg:py-2.5 focus:outline-none cursor-pointer transition-colors duration-300"
             >
-              connect with fiverr
+              connect to Fiverr
             </a>
 
             {/* Hamburger Menu Button (Mobile Only) */}
             <button
               onClick={toggleMenu}
-              className="lg:hidden text-gray-700 hover:text-orange-700 focus:outline-none"
+              className="lg:hidden text-gray-700 hover:text-orange-700 focus:outline-none ml-4" 
               aria-label="Toggle menu"
             >
               <svg
@@ -75,7 +90,7 @@ export default function Header() {
                   to="/"
                   onClick={() => setIsMenuOpen(false)}
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700 font-semibold" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   Home
@@ -86,7 +101,7 @@ export default function Header() {
                   to="/about"
                   onClick={() => setIsMenuOpen(false)}
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700 font-semibold" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   About
@@ -97,7 +112,7 @@ export default function Header() {
                   to="/contact"
                   onClick={() => setIsMenuOpen(false)}
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700 font-semibold" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
                   Contact
@@ -108,11 +123,31 @@ export default function Header() {
                   to="/service"
                   onClick={() => setIsMenuOpen(false)}
                   className={({ isActive }) =>
-                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-400"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                    `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700 font-semibold" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                   }
                 >
-                  Service
+                  Services
                 </NavLink>
+              </li>
+              
+              {/* Mobile-only login/register links */}
+              <li className="lg:hidden mt-2">
+                <div className="flex flex-col space-y-2 pt-2">
+                  <Link
+                    to="/login"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-center text-gray-800 hover:text-white hover:bg-orange-600 font-medium rounded-lg text-sm px-4 py-2 focus:outline-none transition-colors duration-300 border border-gray-300 hover:border-orange-600"
+                  >
+                    Login
+                  </Link>
+                  <Link
+                    to="/register"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-center text-white bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 font-medium rounded-lg text-sm px-4 py-2 focus:outline-none transition-colors duration-300 shadow-md hover:shadow-lg"
+                  >
+                    Register
+                  </Link>
+                </div>
               </li>
             </ul>
           </div>
