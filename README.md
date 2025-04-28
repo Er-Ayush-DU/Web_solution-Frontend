@@ -39,10 +39,10 @@ It aims to connect **businesses** with **skilled freelancers** and make project 
 
 UI's of the website:
 
-![website image](web_solution\src\assets\UI_1.png)
+![website image](assets/UI_1.png)
 
 
-![website image](web_solution\src\assets\UI_2.png)
+![website image](assets/UI_2.png)
 
 
 
