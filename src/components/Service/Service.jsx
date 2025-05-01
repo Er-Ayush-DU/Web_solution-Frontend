@@ -424,20 +424,21 @@ const ServicesCard = () => {
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="absolute inset-0 z-20 flex flex-col justify-end p-6">
+              <div className="absolute inset-0 z-20 flex flex-col justify-end p-6 cursor-pointer"
+                onClick={() => handleOpenForm(service.title)}>
                 <div className="flex items-center mb-2">
                   <span className="text-2xl mr-2">{service.icon}</span>
-                  <h3 className="text-xl font-bold text-white">{service.title}</h3>
+                  <h3 className="text-xl font-bold text-orange-600">{service.title}</h3>
                 </div>
-                <p className="text-gray-200 mb-4">{service.description}</p>
+                <p className="text-gray-300 mb-4">{service.description}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-white font-medium">{service.price}</span>
-                  <button
+                  <span className="text-blue-400 font-medium">{service.price}</span>
+                  {/* <button
                     onClick={() => handleOpenForm(service.title)}
-                    className="px-4 py-2 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg text-white hover:bg-opacity-30 transition-all border border-white border-opacity-30"
+                    className="px-4 py-2 bg-opacity-20 backdrop-blur-sm rounded-lg text-white hover:bg-opacity-30 transition-all border border-white border-opacity-30"
                   >
-                    Get Started
-                  </button>
+                    Click
+                  </button> */}
                 </div>
               </div>
 
